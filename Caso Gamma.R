@@ -11,7 +11,7 @@
 > # Fit distributions
 > fit.w <- fitdistr(sample, "Weibull")
 > fit.g <- fitdistr(sample, "gamma")
-> # Caclulate points for density curves
+> # Calculate points for density curves
 > x <- seq(from=0, to=40, by=1)
 > y.w <- dweibull(x, shape=fit.w$estimate[1],
 + scale=fit.w$estimate[2])
